@@ -1,0 +1,22 @@
+{
+  "name": "poc-c4-diagram-lgo",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "func start",
+    "test": "echo \"No tests yet...\""
+  },
+  "devDependencies": {
+    "eslint": "^7.28.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0"
+  },
+  "dependencies": {
+    "jsdom": "^16.6.0",
+    "jwt-decode": "^3.1.2",
+    "mxgraph": "^4.2.2",
+    "node-fetch": "^2.6.1"
+  }
+}

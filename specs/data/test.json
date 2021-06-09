@@ -1,0 +1,32 @@
+{
+  "ApplicationID": "APP-0001201",
+  "ApplicationName": "1WorldSync",
+  "UUID": "d67dea93-bb7e-4b88-9f0b-49d97225b658",
+  "ApplicationFactsheetURI": "https://xxx.leanix.net/architecturegateway/factsheet/Application/d67dea93-bb7e-4b88-9f0b-49d97225b658",
+  "BusinessCriticality" : "Mission Critical",
+  "FunctionalFit": "Insufficient",
+  "TechnicalFit": "Inappropriate",
+  "UserGroups": [
+    {
+      "FactsheetType": "UserGroup" ,
+      "FactSheetName": "Administrators" ,
+      "UUID": "e3886488-ddad-48c1-b8b6-ff1a1b198837" ,
+      "ConnectedFactSheepURI": "https://xxx.leanix.net/architecturegateway/factsheet/UserGroup/e3886488-ddad-48c1-b8b6-ff1a1b198837",
+      "ConnectionType": "Inbound",
+      "ConnectionDescription": "Configure the application and setup sync" ,
+      "UserGroupNumberOfUsers": 8
+    }
+  ],
+  "Applications": [
+    {
+      "FactsheetType": "Application",
+      "FactSheetName": "Walmart Product Information System",
+      "UUID": "f98dea93-bu7e-4b88-9f0b-49d97225b658",
+      "ConnectedFactSheepURI": "https://xxx.leanix.net/architecturegateway/factsheet/Application/f98dea93-bu7e-4b88-9f0b-49d97225b658",
+      "ConnectionType": "Outbound",
+      "ConnectionDescription": "Sends Product Data to Walmart incl. price and availability",
+      "InterfaceName": "WalmartOutboundInterface",
+      "DataObjectName": "ProductsStockAndAvailability"
+    }
+  ]
+}
