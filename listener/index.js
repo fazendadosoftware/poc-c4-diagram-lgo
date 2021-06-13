@@ -6,14 +6,14 @@ let requests = 0
 
 module.exports = async function (context, req) {
   requests++
-  if (username === null || password === null) context.warn('APP Settings "LEANIX_USERNAME" and "LEANIX_PASSWORD" should be set for basic auth of POST requests')
+  if (username === null || password === null) context.log('APP Settings "LEANIX_USERNAME" and "LEANIX_PASSWORD" should be set for basic auth of POST requests')
   const { method, headers, body } = req
   const { 'content-type': contentType = null, 'x-forwarded-for': forwardedFor } = headers
   if (username !== null && password !== null) {
     const { name: providedUsername = null, pass: providedPassword = null } = auth(req) || {}
       if (providedUsername !== username || providedPassword !== password) {
       context.res = { status: 403, body: 'invalid credentials' }
-      context.error(new Date().toISOString(), '403 Forbidden', forwardedFor)
+      context.log(new Date().toISOString(), '403 Forbidden', forwardedFor)
       return
     }
   }
